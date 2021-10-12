@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+body {
+  overflow: hidden;
+  height: 100%;
+}
+main {
+  font-family: "Heebo", sans-serif;
+  overflow: hidden;
+  height: 100vh;
+  padding-top: 5rem;
+  height: 100%;
+}
+.contact {
+  min-height: 100vh;
+  padding: 0rem 5rem;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: absolute;
+  color: whitesmoke;
+  top: 20%;
+  left: 5%;
+  background-color: #002366;
+  height: 60vh;
+  width: 30%;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8ff;
+  height: 80vh;
+  width: 80vw;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+.container2 h2 {
+  color: grey;
+}
+.container-form {
+  background-color: transparent;
+  z-index: 2;
+  height: 80%;
+  width: 65%;
+  margin-left: 30rem;
+  /*box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.8);*/
+}
+
+.container-info {
+  position: relative;
+  height: 100%;
+  z-index: 2;
+  margin-left: 30px;
+  max-height: 60vh;
+}
+.container-info h1 {
+  font-size: 2rem;
+  padding-top: 20px;
+  margin-left: 5px;
+  font-weight: 700;
+}
+
+.adresa-container,
+.email-container,
+.name-container,
+.phone-container,
+.social-container {
+  display: flex;
+  padding-top: 20px;
+  justify-items: space-evenly;
+  align-items: center;
+}
+.adresa-container h3 {
+  margin-left: 20px;
+  font-weight: lighter;
+}
+.email-container h3 {
+  margin-left: 20px;
+  font-weight: lighter;
+}
+.name-container h3 {
+  margin-left: 20px;
+  font-weight: lighter;
+}
+.phone-container h3 {
+  margin-left: 20px;
+  font-weight: lighter;
+}
+.social-container {
+  justify-content: space-evenly;
+}
+.bi,
+.insta,
+.link {
+  cursor: pointer;
+}
+
+.container-form h1 {
+  font-size: 2.5rem;
+  padding-top: 20px;
+  padding-left: 50px;
+  font-weight: 900;
+  color: #2a52be;
+}
+.container-form h2 {
+  padding-top: 20px;
+  padding-left: 50px;
+}
+input[type="text"] {
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 50px;
+  height: 50px;
+  width: 60%;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  font-size: 20px;
+}
+input[type="submit"] {
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 50px;
+  height: 50px;
+  width: 30%;
+  border-radius: 40px;
+  border: none;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #87d3f8;
+  color: white;
+}
+input:focus {
+  outline: none;
+}
+textarea {
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 50px;
+  height: 120px;
+  width: 60%;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  font-size: 20px;
+}
+textarea:focus {
+  outline: none;
+}
+
+.intro {
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+.slider {
+  background-color: grey;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  z-index: 3;
+}
+.intro-text {
+  color: azure;
+  font-size: 3rem;
+}
+.hide {
+  background: black;
+  overflow: hidden;
+}
+.hide span {
+  transform: translateY(100%);
+  display: inline-block;
+}
+
+@media (max-width: 1024px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    height: 100vh;
+  }
+
+  .form {
+    position: relative;
+    min-width: 60vh;
+    border: none;
+    box-shadow: none;
+  }
+
+  .container2 {
+    border: none;
+    box-shadow: none;
+    background-color: white;
+  }
+
+  .container {
+    height: 60vh;
+    width: 50vh;
+    position: absolute;
+    left: 10%;
+    top: -20%;
+  }
+
+  .container-form {
+    position: absolute;
+    top: 65%;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .container-form h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .container-form h2 {
+    text-align: center;
+  }
+
+  input[type="text"] {
+    width: 80%;
+  }
+
+  textarea {
+    width: 80%;
+  }
+
+  body {
+    overflow: visible;
+  }
+
+  main {
+    overflow: visible;
+    height: 100%;
+  }
+
+  .intro-text {
+    font-size: 2em;
+    text-align: center;
+  }
+}

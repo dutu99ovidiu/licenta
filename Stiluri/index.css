@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+  background-color: black;
+}
+.loader {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 5% 1fr 1fr 1fr 5%;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+canvas {
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  grid-column: 3/3;
+}
+.titlu {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+  margin-top: 100px;
+}
+.ml6 {
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  width: 800px;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+  font-family: "Akaya Telivigala", cursive;
+  font-size: 100px;
+  color: azure;
+  visibility: hidden;
+}
+
+.ml6 .text-wrapper {
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  visibility: hidden;
+  margin-top: 50px;
+  width: 100%;
+}
+.nav1 .link1 {
+  display: inline-block;
+  line-height: 1em;
+}
+.nav1 .link2 {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.nav1 .link3 {
+  display: inline-block;
+  line-height: 1em;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  list-style: none;
+  border-radius: 20px;
+}
+li {
+  color: azure;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+a {
+  color: azure;
+  font-family: "Akaya Telivigala", cursive;
+  font-size: 40px;
+  text-decoration: none;
+}
+.link1 {
+  padding-right: 5px;
+}
+.link2 {
+  padding-left: 5px;
+}
+
+.link3 {
+  padding-left: 10px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -20;
+}
+.info {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  border: solid;
+  border-color: aliceblue;
+  border-radius: 50px;
+  opacity: 1;
+  visibility: hidden;
+}
+.info-wrapper {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+.litere {
+  font-size: 40px;
+  color: #fdd835;
+  font-family: "Lobster", cursive;
+  display: inline-block;
+  line-height: 1em;
+}
+@media (max-width: 1024px) {
+  .loader {
+    display: grid;
+    align-items: center;
+    grid-column: 1fr 1fr;
+  }
+
+  #titlu {
+    text-align: center;
+  }
+  #canvas {
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    grid-column: 3/3;
+    grid-row: 1;
+  }
+  .link1,
+  .link2 {
+    font-size: 40px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    margin-bottom: 1.5rem;
+  }
+}

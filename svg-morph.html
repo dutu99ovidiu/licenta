@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./Stiluri/morph.css">
+ <title>SVG Morphing</title>
+</head>
+<body class="is-loading">
+
+  <div class="intro">
+    <div class="intro-text">
+      <h1 class="hide">
+        <span class="text">Exemplu de text</span>
+      </h1>
+      <h1 class="hide">
+        <span class="text">Alt Exemplu de text</span>
+      </h1>
+      <h1 class="hide">
+        <span class="text">Alt Text aici.</span>
+      </h1>
+    </div>
+  </div>
+  <div class="slider">
+  </div>
+
+
+ 
+ <button id="cta">Click me!</button>
+ <a class="back" href="./animations.html">Pagina Anterioara!</a>
+
+ <svg viewbox="0 0 215 110">
+   <polygon class="polymorph" points ="215,110 0,110 0,0 47.7,0 215,0"/>
+ </svg>
+
+ <div id="blip">
+  <h1>Aceasta Animatie este un Svg Morphing folosind libraria Anime.js</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos rerum, commodi quisquam.</p>
+  <button class="btn2" id="cta2">Go Back!</button>
+  <a class="next-page" href="svg-animation.html">Next Page!</a>
+ </div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+<script src="./Scripturi-animatie/slider.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+ <script src="./Scripturi-animatie/shapes.js"></script>
+</body>
+</html>

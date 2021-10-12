@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2rem;
+}
+
+.content {
+  background-color: grey;
+  max-height: 140vh;
+  border-radius: 0.85rem;
+}
+
+.content h1 {
+  padding-top: 2rem;
+  padding-left: 1rem;
+  font-size: 2rem;
+}
+
+.content h2 {
+  margin-top: 2rem;
+  padding-left: 1rem;
+}
+
+.content p {
+  margin-top: 2rem;
+  line-height: 1.3;
+  font-size: 1.25rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.zona1 {
+  margin-top: 2rem;
+  height: 50vh;
+  width: 100%;
+  background-color: brown;
+}
+
+.zona1 h1 {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 0;
+}
+
+.zona1 p {
+  text-align: center;
+  font-size: 2rem;
+  border-bottom: 2px solid black;
+  color: white;
+}
+
+.zona1 span {
+  font-size: 1.5rem;
+  display: inline-block;
+  color: yellow;
+}
+
+.zona1 h2 {
+  margin-top: 2rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  margin-left: 0;
+  padding-left: 0;
+}
+.zona2 {
+  padding-top: 2rem;
+  height: 50vh;
+  width: 100%;
+  background-color: purple;
+  border-bottom-left-radius: 0.85rem;
+  border-bottom-right-radius: 0.85rem;
+}
+
+.zona2 h1 {
+  text-align: center;
+  padding-top: 0;
+  border-bottom: 2px solid black;
+}
+
+.zona2 h2 {
+  margin-top: 1rem;
+}
+
+.btn {
+  width: 8rem;
+  height: 3rem;
+  background-color: chartreuse;
+  margin-left: 3rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.intro {
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider {
+  background: grey;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
+.intro-text {
+  color: azure;
+  font-size: 3rem;
+}
+.hide {
+  background: black;
+  overflow: hidden;
+}
+.hide span {
+  transform: translateY(100%);
+  display: inline-block;
+}
+
+@media (min-width: 65.25rem) {
+  .content {
+    background-color: aqua;
+    height: 80vh;
+    width: 70vw;
+  }
+  .content p {
+    padding-right: 20rem;
+  }
+  .container-zone {
+    display: flex;
+  }
+  .zona1 {
+    border-bottom-left-radius: 0.85rem;
+  }
+  .zona2 {
+    margin-top: 2rem;
+    border-bottom-left-radius: 0;
+  }
+
+  .zona2 h1 {
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  .zona1 p {
+    text-align: center;
+    width: 100%;
+    padding-right: 0;
+  }
+
+  body {
+    padding-left: 10rem;
+    padding-top: 5rem;
+  }
+}

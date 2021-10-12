@@ -1,0 +1,44 @@
+.second-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $gradient_Very_DarkGrayBlue;
+  font-family: $overpass;
+  background-image: url(../images-5/bg-pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: -5% 90%;
+  border-top-right-radius: 200px;
+  border-bottom-left-radius: 100px;
+  margin-top: 4rem;
+
+  @include for-phone-only {
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 5rem;
+    background-position: center bottom;
+    background-size: contain;
+  }
+
+  img {
+    margin-top: 3rem;
+  }
+  &__text-container {
+    color: $neutral_White;
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+    @include for-phone-only {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+
+    h2 {
+      padding-bottom: 2rem;
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}

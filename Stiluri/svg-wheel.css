@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141019;
+  background: radial-gradient(at 50% -20%, #908392, #0d060e) fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: white;
+}
+
+.container {
+  transform: translateY(5rem);
+}
+
+#handboy {
+  transform-origin: 98% 98%;
+  transform-box: fill-box;
+}
+
+#girllight {
+  transform-origin: 0% 97%;
+  transform-box: fill-box;
+}
+
+#hairgirl {
+  transform-origin: 60% 0%;
+  transform-box: fill-box;
+}
+
+#zero {
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+.is-loading {
+  overflow: hidden;
+}
+
+.intro {
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.slider {
+  background-color: grey;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  z-index: 10;
+}
+.intro-text {
+  color: azure;
+  font-size: 3rem;
+}
+.hide {
+  background: black;
+  overflow: hidden;
+}
+.hide span {
+  transform: translateY(100%);
+  display: inline-block;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+a {
+  z-index: 1;
+}
+
+.titlu {
+  text-align: center;
+  color: white;
+  margin-top: 0.75rem;
+}

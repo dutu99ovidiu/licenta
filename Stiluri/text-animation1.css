@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  border: none;
+  border-bottom: 2px dashed #ffffe0;
+  text-align: center;
+  outline: none;
+  min-width: 200px;
+  height: 50px;
+  font-size: 2em;
+  background: #000;
+  color: #ffffe0;
+}
+
+body {
+  overflow: hidden;
+}
+
+html {
+  background-color: #000;
+}
+
+.text-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.is-loading {
+  overflow: hidden;
+}
+
+.intro {
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.slider {
+  background-color: grey;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  z-index: 1;
+}
+.intro-text {
+  color: azure;
+  font-size: 3rem;
+}
+.hide {
+  background: black;
+  overflow: hidden;
+}
+.hide span {
+  transform: translateY(100%);
+  display: inline-block;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+}

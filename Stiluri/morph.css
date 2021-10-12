@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+svg {
+  height: 100vh;
+}
+.polymorph {
+  fill: #29abe2;
+}
+#cta {
+  position: absolute;
+  margin: 10em auto 0 auto;
+  left: 0;
+  right: 0;
+  width: 30%;
+  background: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 15px;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+  outline: 0;
+}
+.back {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+.btn2 {
+  width: 30%;
+  height: 40%;
+  font-size: 1.5em;
+  margin: 30px auto;
+  background: #29abe2 !important;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+
+#blip {
+  position: absolute;
+  color: #29abe2;
+  right: 25%;
+  top: 0;
+  opacity: 0;
+  width: 30%;
+  transform: translateY(-800px);
+}
+
+.next-page {
+  text-decoration: none;
+  color: #29abe2;
+  margin-left: 2rem;
+  font-size: 1.5em;
+}
+
+.is-loading {
+  overflow: hidden;
+}
+
+.intro {
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.slider {
+  background-color: grey;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  z-index: 1;
+}
+.intro-text {
+  color: azure;
+  font-size: 3rem;
+}
+.hide {
+  background: black;
+  overflow: hidden;
+}
+.hide span {
+  transform: translateY(100%);
+  display: inline-block;
+}

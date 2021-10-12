@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.text-globe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  color: white;
+  background-color: black;
+  padding-left: 1.5rem;
+}
+
+#canvasContainer {
+  height: 100vh;
+  width: 50%;
+}
+
+.title {
+  font-size: 4em;
+}
+
+.p-text {
+  font-size: 2.5em;
+  padding-right: 10rem;
+  padding-top: 2rem;
+}
+
+a {
+  display: inline-block;
+  padding-top: 2rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1.25em;
+}
+
+.is-loading {
+  overflow: hidden;
+}
+
+.intro {
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.slider {
+  background-color: grey;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  z-index: 10;
+}
+.intro-text {
+  color: azure;
+  font-size: 3rem;
+}
+.hide {
+  background: black;
+  overflow: hidden;
+}
+.hide span {
+  transform: translateY(100%);
+  display: inline-block;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 4rem;
+  margin-top: 5rem;
+}
